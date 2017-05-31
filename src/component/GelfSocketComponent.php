@@ -43,8 +43,6 @@ final class GelfSocketComponent extends Component
         if ($engine instanceof GelfSocketLog) {
             $this->engine = $engine;
             $this->logger = $engine->getGelfSocketEngine();
-        } else {
-            Log::notice("log engine $name not found or not an instance of GelfSocketLog");
         }
     }
 
