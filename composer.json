@@ -1,0 +1,44 @@
+{
+   "archive" : {
+      "exclude" : [
+         ".*",
+         "*~",
+         "vendor/",
+         "docs/",
+         "Makefile",
+         "composer.lock",
+         "composer.phar",
+         "composer.yaml"
+      ]
+   },
+   "authors" : [
+      {
+         "email" : "zurborg@cpan.org",
+         "homepage" : "https://zurborg.github.io/",
+         "name" : "David Zurborg"
+      }
+   ],
+   "autoload" : {
+      "psr-4" : {
+         "Cake\\Controller\\Component\\" : "src/component",
+         "Cake\\Log\\Engine\\" : "src/logengine"
+      }
+   },
+   "description" : "GelfSocket Logging Engine for CakePHP",
+   "license" : "ISC",
+   "minimum-stability" : "stable",
+   "name" : "zurborg/cake-log-engine-gelfsocket",
+   "require" : {
+      "cakephp/cakephp" : "~3.2",
+      "php" : "~7",
+      "zurborg/log-gelfsocket" : "~0.2",
+      "zurborg/wrap-json" : "~1.0"
+   },
+   "require-dev" : {
+      "evert/phpdoc-md" : "~0",
+      "phpdocumentor/phpdocumentor" : "~2",
+      "phpunit/phpunit" : "~5",
+      "squizlabs/php_codesniffer" : "~2"
+   },
+   "type" : "library"
+}

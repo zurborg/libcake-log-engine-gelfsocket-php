@@ -1,0 +1,41 @@
+---
+type: library
+name: zurborg/cake-log-engine-gelfsocket
+
+description: GelfSocket Logging Engine for CakePHP
+license: ISC
+
+authors:
+  - name: David Zurborg
+    email: zurborg@cpan.org
+    homepage: https://zurborg.github.io/
+
+require:
+  php: '~7'
+  zurborg/log-gelfsocket: '~0.2'
+  zurborg/wrap-json: '~1.0'
+  cakephp/cakephp: '~3.2'
+
+require-dev:
+  phpunit/phpunit: '~5'
+  evert/phpdoc-md: '~0'
+  phpdocumentor/phpdocumentor: '~2'
+  squizlabs/php_codesniffer: '~2'
+
+autoload:
+  psr-4:
+    Cake\Log\Engine\: src/logengine
+    Cake\Controller\Component\: src/component
+
+minimum-stability: stable
+
+archive:
+  exclude:
+    - '.*'
+    - '*~'
+    - vendor/
+    - docs/
+    - Makefile
+    - composer.lock
+    - composer.phar
+    - composer.yaml
